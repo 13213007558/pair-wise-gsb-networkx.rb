@@ -40,6 +40,11 @@ g = NetworkX::Graph.new
 g.add_edge('start', 'stop')
 ``` 
 
+Small-scale Vietoris-Rips persistence is available for undirected graphs with at most
+32 nodes through `NetworkX.vietoris_rips_persistence`. It is truncated at dimension two
+and returns F2 persistence intervals for H0 and H1, including the creator and killer
+simplex of each finite interval.
+
 ## Document
 
 You can read [Document](https://SciRuby.github.io/networkx.rb/) for this library.
